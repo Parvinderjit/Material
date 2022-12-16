@@ -59,7 +59,7 @@ open class Bar: View {
   }
   
   /// A reference to EdgeInsets.
-  @IBInspectable
+  
   open var contentEdgeInsets: EdgeInsets {
     get {
       return grid.contentEdgeInsets
@@ -80,7 +80,7 @@ open class Bar: View {
   }
   
   /// A wrapper around grid.interimSpace.
-  @IBInspectable
+  
   open var interimSpace: InterimSpace {
     get {
       return grid.interimSpace
@@ -91,7 +91,7 @@ open class Bar: View {
   }
   
   /// Grid cell factor.
-  @IBInspectable
+  
   open var gridFactor: CGFloat = 12 {
     didSet {
       assert(0 < gridFactor, "[Material Error: gridFactor must be greater than 0.]")

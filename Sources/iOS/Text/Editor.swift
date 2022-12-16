@@ -45,13 +45,13 @@ open class Editor: View, Themeable {
   }
   
   /// The placeholder UILabel.
-  @IBInspectable
+  
   open var placeholderLabel: UILabel {
     return textView.placeholderLabel
   }
   
   /// A Boolean that indicates if the placeholder label is animated.
-  @IBInspectable
+  
   open var isPlaceholderAnimated = true
   
   /// Set the placeholder animation value.
@@ -62,7 +62,7 @@ open class Editor: View, Themeable {
   }
   
   /// Placeholder normal text color.
-  @IBInspectable
+  
   open var placeholderNormalColor = Color.darkText.others {
     didSet {
       updatePlaceholderLabelColor()
@@ -70,7 +70,7 @@ open class Editor: View, Themeable {
   }
   
   /// Placeholder active text color.
-  @IBInspectable
+  
   open var placeholderActiveColor = Color.blue.base {
     didSet {
       updatePlaceholderLabelColor()
@@ -78,7 +78,7 @@ open class Editor: View, Themeable {
   }
   
   /// The scale of the active placeholder in relation to the inactive.
-  @IBInspectable
+  
   open var placeholderActiveScale: CGFloat = 0.75 {
     didSet {
       layoutPlaceholderLabel()
@@ -86,15 +86,15 @@ open class Editor: View, Themeable {
   }
   
   /// This property adds a padding to placeholder y position animation
-  @IBInspectable
+  
   open var placeholderVerticalOffset: CGFloat = 0
   
   /// This property adds a padding to placeholder x position animation
-  @IBInspectable
+  
   open var placeholderHorizontalOffset: CGFloat = 0
   
   /// Divider normal height.
-  @IBInspectable
+  
   open var dividerNormalHeight: CGFloat = 1 {
     didSet {
       updateDividerHeight()
@@ -102,7 +102,7 @@ open class Editor: View, Themeable {
   }
   
   /// Divider active height.
-  @IBInspectable
+  
   open var dividerActiveHeight: CGFloat = 2 {
     didSet {
       updateDividerHeight()
@@ -110,7 +110,7 @@ open class Editor: View, Themeable {
   }
   
   /// Divider normal color.
-  @IBInspectable
+  
   open var dividerNormalColor = Color.grey.lighten2 {
     didSet {
       updateDividerColor()
@@ -118,7 +118,7 @@ open class Editor: View, Themeable {
   }
   
   /// Divider active color.
-  @IBInspectable
+  
   open var dividerActiveColor = Color.blue.base {
     didSet {
       updateDividerColor()
@@ -126,11 +126,11 @@ open class Editor: View, Themeable {
   }
   
   /// The detailLabel UILabel that is displayed.
-  @IBInspectable
+  
   public let detailLabel = UILabel()
   
   /// The detailLabel text value.
-  @IBInspectable
+  
   open var detail: String? {
     get {
       return detailLabel.text
@@ -142,7 +142,7 @@ open class Editor: View, Themeable {
   }
   
   /// The detailLabel text color.
-  @IBInspectable
+  
   open var detailColor = Color.darkText.others {
     didSet {
       updateDetailLabelColor()
@@ -150,7 +150,7 @@ open class Editor: View, Themeable {
   }
   
   /// Vertical distance for the detailLabel from the divider.
-  @IBInspectable
+  
   open var detailVerticalOffset: CGFloat = 8 {
     didSet {
       layoutSubviews()

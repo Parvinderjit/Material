@@ -289,7 +289,7 @@ open class TabBar: Bar {
   }
   
   /// A reference to EdgeInsets.
-  @IBInspectable
+  
   open var tabItemsContentEdgeInsets: EdgeInsets {
     get {
       return contentView.grid.contentEdgeInsets
@@ -310,7 +310,7 @@ open class TabBar: Bar {
   }
   
   /// A wrapper around tabItems interimSpace.
-  @IBInspectable
+  
   open var tabItemsInterimSpace: InterimSpace {
     get {
       return contentView.grid.interimSpace

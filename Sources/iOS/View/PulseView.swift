@@ -46,7 +46,7 @@ open class PulseView: View, Pulseable, PulseableLayer {
   }
   
   /// PulseAnimation color.
-  @IBInspectable
+  
   open var pulseColor: UIColor {
     get {
       return pulse.color
@@ -57,7 +57,7 @@ open class PulseView: View, Pulseable, PulseableLayer {
   }
   
   /// Pulse opacity.
-  @IBInspectable
+  
   open var pulseOpacity: CGFloat {
     get {
       return pulse.opacity

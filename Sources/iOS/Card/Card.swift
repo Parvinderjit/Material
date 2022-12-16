@@ -29,14 +29,14 @@ open class Card: PulseView {
   /// A container view for subviews.
   public let container = UIView()
   
-  @IBInspectable
+  
   open override var cornerRadiusPreset: CornerRadiusPreset {
     didSet {
       container.cornerRadiusPreset = cornerRadiusPreset
     }
   }
   
-  @IBInspectable
+  
   open var cornerRadius: CGFloat {
     get {
       return container.layer.cornerRadius
@@ -52,7 +52,7 @@ open class Card: PulseView {
     }
   }
   
-  @IBInspectable
+  
   open override var backgroundColor: UIColor? {
     didSet {
       container.backgroundColor = backgroundColor
@@ -60,7 +60,7 @@ open class Card: PulseView {
   }
   
   /// A reference to the toolbar.
-  @IBInspectable
+  
   open var toolbar: Toolbar? {
     didSet {
       oldValue?.removeFromSuperview()
@@ -81,7 +81,7 @@ open class Card: PulseView {
   }
   
   /// A reference to toolbarEdgeInsets.
-  @IBInspectable
+  
   open var toolbarEdgeInsets = EdgeInsets.zero {
     didSet {
       layoutSubviews()
@@ -89,7 +89,7 @@ open class Card: PulseView {
   }
   
   /// A reference to the contentView.
-  @IBInspectable
+  
   open var contentView: UIView? {
     didSet {
       oldValue?.removeFromSuperview()
@@ -111,7 +111,7 @@ open class Card: PulseView {
   }
   
   /// A reference to contentViewEdgeInsets.
-  @IBInspectable
+  
   open var contentViewEdgeInsets = EdgeInsets.zero {
     didSet {
       layoutSubviews()
@@ -119,7 +119,7 @@ open class Card: PulseView {
   }
   
   /// A reference to the bottomBar.
-  @IBInspectable
+  
   open var bottomBar: Bar? {
     didSet {
       oldValue?.removeFromSuperview()
@@ -140,7 +140,7 @@ open class Card: PulseView {
   }
   
   /// A reference to bottomBarEdgeInsets.
-  @IBInspectable
+  
   open var bottomBarEdgeInsets = EdgeInsets.zero {
     didSet {
       layoutSubviews()

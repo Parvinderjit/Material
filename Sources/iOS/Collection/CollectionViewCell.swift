@@ -55,7 +55,7 @@ open class CollectionViewCell: UICollectionViewCell, Pulseable, PulseableLayer {
   }
   
   /// PulseAnimation color.
-  @IBInspectable
+  
   open var pulseColor: UIColor {
     get {
       return pulse.color
@@ -66,7 +66,7 @@ open class CollectionViewCell: UICollectionViewCell, Pulseable, PulseableLayer {
   }
   
   /// Pulse opacity.
-  @IBInspectable
+  
   open var pulseOpacity: CGFloat {
     get {
       return pulse.opacity
@@ -81,7 +81,7 @@ open class CollectionViewCell: UICollectionViewCell, Pulseable, PulseableLayer {
    property. Images should not be set to the backing layer's contents
    property to avoid conflicts when using clipsToBounds.
    */
-  @IBInspectable
+  
   open var image: UIImage? {
     didSet {
       visualLayer.contents = image?.cgImage
@@ -94,7 +94,7 @@ open class CollectionViewCell: UICollectionViewCell, Pulseable, PulseableLayer {
    much greater flexibility than the contentsGravity property in
    terms of how the image is cropped and stretched.
    */
-  @IBInspectable
+  
   open var contentsRect: CGRect {
     get {
       return visualLayer.contentsRect
@@ -108,7 +108,7 @@ open class CollectionViewCell: UICollectionViewCell, Pulseable, PulseableLayer {
    A CGRect that defines a stretchable region inside the visualLayer
    with a fixed border around the edge.
    */
-  @IBInspectable
+  
   open var contentsCenter: CGRect {
     get {
       return visualLayer.contentsCenter
@@ -123,7 +123,7 @@ open class CollectionViewCell: UICollectionViewCell, Pulseable, PulseableLayer {
    dimensions of the visualLayer's contents property and the size
    of the view. By default, this value is set to the Screen.scale.
    */
-  @IBInspectable
+  
   open var contentsScale: CGFloat {
     get {
       return visualLayer.contentsScale
@@ -134,7 +134,7 @@ open class CollectionViewCell: UICollectionViewCell, Pulseable, PulseableLayer {
   }
   
   /// Determines how content should be aligned within the visualLayer's bounds.
-  @IBInspectable
+  
   open var contentsGravity: CALayerContentsGravity {
     get {
       return visualLayer.contentsGravity
@@ -145,7 +145,7 @@ open class CollectionViewCell: UICollectionViewCell, Pulseable, PulseableLayer {
   }
   
   /// A property that accesses the backing layer's background
-  @IBInspectable
+  
   open override var backgroundColor: UIColor? {
     didSet {
       layer.backgroundColor = backgroundColor?.cgColor

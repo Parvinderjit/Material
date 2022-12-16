@@ -45,7 +45,7 @@ open class ImageCard: Card {
   }
   
   /// A reference to imageViewEdgeInsets.
-  @IBInspectable
+  
   open var imageViewEdgeInsets = EdgeInsets.zero {
     didSet {
       layoutSubviews()
@@ -53,7 +53,7 @@ open class ImageCard: Card {
   }
   
   /// A reference to the imageView.
-  @IBInspectable
+  
   open var imageView: UIImageView? {
     didSet {
       oldValue?.removeFromSuperview()

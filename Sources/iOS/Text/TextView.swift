@@ -95,7 +95,7 @@ open class TextView: UITextView, Themeable {
   open fileprivate(set) var isKeyboardHidden = true
   
   /// A property that accesses the backing layer's background
-  @IBInspectable
+  
   open override var backgroundColor: UIColor? {
     didSet {
       layer.backgroundColor = backgroundColor?.cgColor
@@ -106,7 +106,7 @@ open class TextView: UITextView, Themeable {
   private var _font: UIFont?
   
   /// The placeholderLabel font value.
-  @IBInspectable
+  
   open override var font: UIFont? {
     didSet {
       _font = font
@@ -115,7 +115,7 @@ open class TextView: UITextView, Themeable {
   }
   
   /// The placeholderLabel text value.
-  @IBInspectable
+  
   open var placeholder: String? {
     get {
       return placeholderLabel.text
@@ -126,14 +126,14 @@ open class TextView: UITextView, Themeable {
   }
   
   /// The placeholder UILabel.
-  @IBInspectable
+  
   public let placeholderLabel = UILabel()
   
   /// A property to enable/disable operations on the placeholderLabel
   internal var isPlaceholderLabelEnabled = true
   
   /// Placeholder normal text
-  @IBInspectable
+  
   open var placeholderColor = Color.darkText.others {
     didSet {
       updatePlaceholderLabelColor()

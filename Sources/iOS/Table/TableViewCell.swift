@@ -54,7 +54,7 @@ open class TableViewCell: UITableViewCell, Pulseable, PulseableLayer {
   }
   
   /// PulseAnimation color.
-  @IBInspectable
+  
   open var pulseColor: UIColor {
     get {
       return pulse.color
@@ -65,7 +65,7 @@ open class TableViewCell: UITableViewCell, Pulseable, PulseableLayer {
   }
   
   /// Pulse opacity.
-  @IBInspectable
+  
   open var pulseOpacity: CGFloat {
     get {
       return pulse.opacity
@@ -76,7 +76,7 @@ open class TableViewCell: UITableViewCell, Pulseable, PulseableLayer {
   }
   
   /// A property that accesses the backing layer's background
-  @IBInspectable
+  
   open override var backgroundColor: UIColor? {
     didSet {
       layer.backgroundColor = backgroundColor?.cgColor

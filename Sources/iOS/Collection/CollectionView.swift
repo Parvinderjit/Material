@@ -66,7 +66,7 @@ open class CollectionView: UICollectionView {
   }
   
   /// Spacing between items.
-  @IBInspectable
+  
   open var interimSpace: InterimSpace {
     get {
       return (collectionViewLayout as? CollectionViewLayout)!.interimSpace

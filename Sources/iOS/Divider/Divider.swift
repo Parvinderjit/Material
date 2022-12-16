@@ -167,7 +167,7 @@ extension UIView {
   }
   
   /// Divider color.
-  @IBInspectable
+  
   open var dividerColor: UIColor? {
     get {
       return divider.color
@@ -178,7 +178,7 @@ extension UIView {
   }
   
   /// Divider visibility.
-  @IBInspectable
+  
   open var isDividerHidden: Bool {
     get {
       return divider.isHidden
@@ -199,7 +199,7 @@ extension UIView {
   }
   
   /// Divider thickness.
-  @IBInspectable
+  
   open var dividerThickness: CGFloat {
     get {
       return divider.thickness

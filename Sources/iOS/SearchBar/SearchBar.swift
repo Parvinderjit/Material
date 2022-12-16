@@ -57,7 +57,7 @@ public protocol SearchBarDelegate {
 
 open class SearchBar: Bar {
   /// The UITextField for the searchBar.
-  @IBInspectable
+  
   public let textField = UITextField()
   
   /// Reference to the clearButton.
@@ -67,7 +67,7 @@ open class SearchBar: Bar {
   open weak var delegate: SearchBarDelegate?
   
   /// Handle the clearButton manually.
-  @IBInspectable
+  
   open var isClearButtonAutoHandleEnabled = true {
     didSet {
       clearButton.removeTarget(self, action: #selector(handleClearButton), for: .touchUpInside)
@@ -78,7 +78,7 @@ open class SearchBar: Bar {
   }
   
   /// TintColor for searchBar.
-  @IBInspectable
+  
   open override var tintColor: UIColor? {
     get {
       return textField.tintColor
@@ -89,7 +89,7 @@ open class SearchBar: Bar {
   }
   
   /// TextColor for searchBar.
-  @IBInspectable
+  
   open var textColor: UIColor? {
     get {
       return textField.textColor
@@ -100,7 +100,7 @@ open class SearchBar: Bar {
   }
   
   /// Sets the textField placeholder value.
-  @IBInspectable
+  
   open var placeholder: String? {
     didSet {
       if let v = placeholder {
@@ -110,7 +110,7 @@ open class SearchBar: Bar {
   }
   
   /// Placeholder text
-  @IBInspectable
+  
   open var placeholderColor = Color.darkText.others {
     didSet {
       if let v = placeholder {

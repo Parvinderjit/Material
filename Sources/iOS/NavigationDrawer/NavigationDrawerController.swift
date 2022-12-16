@@ -174,7 +174,7 @@ open class NavigationDrawerController: TransitionController {
    the leftView is opened, if it is below the threshold, the
    leftView is closed.
    */
-  @IBInspectable
+  
   open var leftThreshold: CGFloat = 64
   fileprivate var leftViewThreshold: CGFloat = 0
   
@@ -185,7 +185,7 @@ open class NavigationDrawerController: TransitionController {
    the rightView is closed, if it is below the threshold, the
    rightView is opened.
    */
-  @IBInspectable
+  
   open var rightThreshold: CGFloat = 64
   fileprivate var rightViewThreshold: CGFloat = 0
   
@@ -199,14 +199,14 @@ open class NavigationDrawerController: TransitionController {
    A CGFloat property that sets the animation duration of the
    leftView when closing and opening. Defaults to 0.25.
    */
-  @IBInspectable
+  
   open var animationDuration: TimeInterval = 0.25
   
   /**
    A Boolean property that enables and disables the leftView from
    opening and closing. Defaults to true.
    */
-  @IBInspectable
+  
   open var isEnabled: Bool {
     get {
       return isLeftViewEnabled || isRightViewEnabled
@@ -226,7 +226,7 @@ open class NavigationDrawerController: TransitionController {
    A Boolean property that enables and disables the leftView from
    opening and closing. Defaults to true.
    */
-  @IBInspectable
+  
   open var isLeftViewEnabled = false {
     didSet {
       isLeftPanGestureEnabled = isLeftViewEnabled
@@ -235,7 +235,7 @@ open class NavigationDrawerController: TransitionController {
   }
   
   /// Enables the left pan gesture.
-  @IBInspectable
+  
   open var isLeftPanGestureEnabled = false {
     didSet {
       if isLeftPanGestureEnabled {
@@ -247,7 +247,7 @@ open class NavigationDrawerController: TransitionController {
   }
   
   /// Enables the left tap gesture.
-  @IBInspectable
+  
   open var isLeftTapGestureEnabled = false {
     didSet {
       if isLeftTapGestureEnabled {
@@ -262,7 +262,7 @@ open class NavigationDrawerController: TransitionController {
    A Boolean property that enables and disables the rightView from
    opening and closing. Defaults to true.
    */
-  @IBInspectable
+  
   open var isRightViewEnabled = false {
     didSet {
       isRightPanGestureEnabled = isRightViewEnabled
@@ -271,7 +271,7 @@ open class NavigationDrawerController: TransitionController {
   }
   
   /// Enables the right pan gesture.
-  @IBInspectable
+  
   open var isRightPanGestureEnabled = false {
     didSet {
       if isRightPanGestureEnabled {
@@ -283,7 +283,7 @@ open class NavigationDrawerController: TransitionController {
   }
   
   /// Enables the right tap gesture.
-  @IBInspectable
+  
   open var isRightTapGestureEnabled = false {
     didSet {
       if isRightTapGestureEnabled {
@@ -298,7 +298,7 @@ open class NavigationDrawerController: TransitionController {
    A Boolean property that triggers the status bar to be isHidden
    when the leftView is opened. Defaults to true.
    */
-  @IBInspectable
+  
   open var isHiddenStatusBarEnabled = true
   
   /**
@@ -367,14 +367,14 @@ open class NavigationDrawerController: TransitionController {
    A CGFloat property to access the width that the leftView
    opens up to.
    */
-  @IBInspectable
+  
   open fileprivate(set) var leftViewWidth: CGFloat = 0
   
   /**
    A CGFloat property to access the width that the rightView
    opens up to.
    */
-  @IBInspectable
+  
   open fileprivate(set) var rightViewWidth: CGFloat = 0
   
   /**

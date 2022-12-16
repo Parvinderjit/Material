@@ -110,7 +110,7 @@ extension CALayer {
   }
   
   /// A property that accesses the frame.origin.x property.
-  @IBInspectable
+  
   open var x: CGFloat {
     get {
       return frame.origin.x
@@ -123,7 +123,7 @@ extension CALayer {
   }
   
   /// A property that accesses the frame.origin.y property.
-  @IBInspectable
+  
   open var y: CGFloat {
     get {
       return frame.origin.y
@@ -136,7 +136,7 @@ extension CALayer {
   }
   
   /// A property that accesses the frame.size.width property.
-  @IBInspectable
+  
   open var width: CGFloat {
     get {
       return frame.size.width
@@ -154,7 +154,7 @@ extension CALayer {
   }
   
   /// A property that accesses the frame.size.height property.
-  @IBInspectable
+  
   open var height: CGFloat {
     get {
       return frame.size.height
@@ -216,7 +216,7 @@ extension CALayer {
   }
   
   /// Enables automatic shadowPath sizing.
-  @IBInspectable
+  
   open var isShadowPathAutoSizing: Bool {
     get {
       return materialLayer.isShadowPathAutoSizing

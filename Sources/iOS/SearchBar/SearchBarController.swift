@@ -44,7 +44,7 @@ extension UIViewController {
 
 open class SearchBarController: StatusBarController {
   /// Reference to the SearchBar.
-  @IBInspectable
+  
   public let searchBar = SearchBar()
   
   /// The searchBar alignment.

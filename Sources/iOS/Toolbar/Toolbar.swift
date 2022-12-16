@@ -27,7 +27,7 @@ import UIKit
 
 open class Toolbar: Bar, Themeable {
   /// A convenience property to set the titleLabel.text.
-  @IBInspectable
+  
   open var title: String? {
     get {
       return titleLabel.text
@@ -39,11 +39,11 @@ open class Toolbar: Bar, Themeable {
   }
   
   /// Title label.
-  @IBInspectable
+  
   public let titleLabel = UILabel()
   
   /// A convenience property to set the detailLabel.text.
-  @IBInspectable
+  
   open var detail: String? {
     get {
       return detailLabel.text
@@ -55,7 +55,7 @@ open class Toolbar: Bar, Themeable {
   }
   
   /// Detail label.
-  @IBInspectable
+  
   public let detailLabel = UILabel()
   
   open override var leftViews: [UIView] {

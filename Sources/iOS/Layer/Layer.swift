@@ -40,7 +40,7 @@ open class Layer: CAShapeLayer {
    property. Images should not be set to the backing layer's contents
    property to avoid conflicts when using clipsToBounds.
    */
-  @IBInspectable
+  
   open var image: UIImage? {
     didSet {
       visualLayer.contents = image?.cgImage
@@ -74,7 +74,7 @@ open class Layer: CAShapeLayer {
    dimensions of the visualLayer's contents property and the size
    of the layer. By default, this value is set to the Screen.scale.
    */
-  @IBInspectable
+  
   open override var contentsScale: CGFloat {
     didSet {
       visualLayer.contentsScale = contentsScale
@@ -82,7 +82,7 @@ open class Layer: CAShapeLayer {
   }
   
   /// Determines how content should be aligned within the visualLayer's bounds.
-  @IBInspectable
+  
   open override var contentsGravity: CALayerContentsGravity {
     get {
       return visualLayer.contentsGravity
@@ -97,7 +97,7 @@ open class Layer: CAShapeLayer {
    property has a value of .circle when the cornerRadius is set, it will
    become .none, as it no longer maintains its circle shape.
    */
-  @IBInspectable
+  
   open override var cornerRadius: CGFloat {
     didSet {
       layoutShadowPath()

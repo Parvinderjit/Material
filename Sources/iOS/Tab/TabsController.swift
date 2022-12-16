@@ -126,7 +126,7 @@ open class TabsController: TransitionController {
   }
   
   /// The TabBar used to switch between view controllers.
-  @IBInspectable
+  
   public let tabBar = TabBar()
   
   /// A Boolean that controls if the swipe feature is enabled.
@@ -156,7 +156,7 @@ open class TabsController: TransitionController {
   }
   
   /// A reference to the currently selected view controller index value.
-  @IBInspectable
+  
   open fileprivate(set) var selectedIndex = 0
   
   /// The tabBar alignment.

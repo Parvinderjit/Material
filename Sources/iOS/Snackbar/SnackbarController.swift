@@ -99,7 +99,7 @@ open class SnackbarController: TransitionController {
   }
   
   /// A reference to snackbarEdgeInsets.
-  @IBInspectable
+  
   open var snackbarEdgeInsets = EdgeInsets.zero {
     didSet {
       layoutSubviews()
@@ -110,7 +110,7 @@ open class SnackbarController: TransitionController {
    A boolean that controls if layoutEdgeInsets of snackbar is adjusted
    automatically.
    */
-  @IBInspectable
+  
   open var automaticallyAdjustSnackbarLayoutEdgeInsets = true
   
   /**

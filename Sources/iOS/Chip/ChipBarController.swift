@@ -58,7 +58,7 @@ open class ChipBarController: TransitionController {
   }
   
   /// The ChipBar used to switch between view controllers.
-  @IBInspectable
+  
   public let chipBar = ChipBar()
   
   /// The chipBar alignment.

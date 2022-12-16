@@ -34,7 +34,7 @@ open class PresenterCard: Card {
   }
   
   /// A reference to presenterViewEdgeInsets.
-  @IBInspectable
+  
   open var presenterViewEdgeInsets = EdgeInsets.zero {
     didSet {
       layoutSubviews()
@@ -42,7 +42,7 @@ open class PresenterCard: Card {
   }
   
   /// A reference to the presenterView.
-  @IBInspectable
+  
   open var presenterView: UIView? {
     didSet {
       oldValue?.removeFromSuperview()

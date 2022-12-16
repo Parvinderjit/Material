@@ -70,7 +70,7 @@ open class TextField: UITextField, Themeable {
   }
   
   /// A Boolean that indicates if the placeholder label is animated.
-  @IBInspectable
+  
   open var isPlaceholderAnimated = true
   
   /// Set the placeholder animation value.
@@ -111,7 +111,7 @@ open class TextField: UITextField, Themeable {
   open var leftViewOffset: CGFloat = 16
   
   /// Placeholder normal text
-  @IBInspectable
+  
   open var leftViewNormalColor = Color.darkText.others {
     didSet {
       updateLeftViewColor()
@@ -119,7 +119,7 @@ open class TextField: UITextField, Themeable {
   }
   
   /// Placeholder active text
-  @IBInspectable
+  
   open var leftViewActiveColor = Color.blue.base {
     didSet {
       updateLeftViewColor()
@@ -127,7 +127,7 @@ open class TextField: UITextField, Themeable {
   }
   
   /// Divider normal height.
-  @IBInspectable
+  
   open var dividerNormalHeight: CGFloat = 1 {
     didSet {
       updateDividerHeight()
@@ -135,7 +135,7 @@ open class TextField: UITextField, Themeable {
   }
   
   /// Divider active height.
-  @IBInspectable
+  
   open var dividerActiveHeight: CGFloat = 2 {
     didSet {
       updateDividerHeight()
@@ -143,7 +143,7 @@ open class TextField: UITextField, Themeable {
   }
   
   /// Divider normal color.
-  @IBInspectable
+  
   open var dividerNormalColor = Color.grey.lighten2 {
     didSet {
       updateDividerColor()
@@ -151,7 +151,7 @@ open class TextField: UITextField, Themeable {
   }
   
   /// Divider active color.
-  @IBInspectable
+  
   open var dividerActiveColor = Color.blue.base {
     didSet {
       updateDividerColor()
@@ -159,7 +159,7 @@ open class TextField: UITextField, Themeable {
   }
   
   /// The placeholderLabel font value.
-  @IBInspectable
+  
   open override var font: UIFont? {
     didSet {
       placeholderLabel.font = font
@@ -167,7 +167,7 @@ open class TextField: UITextField, Themeable {
   }
   
   /// The placeholderLabel text value.
-  @IBInspectable
+  
   open override var placeholder: String? {
     get {
       return placeholderLabel.text
@@ -190,11 +190,11 @@ open class TextField: UITextField, Themeable {
   }
   
   /// The placeholder UILabel.
-  @IBInspectable
+  
   public let placeholderLabel = UILabel()
   
   /// Placeholder normal text
-  @IBInspectable
+  
   open var placeholderNormalColor = Color.darkText.others {
     didSet {
       updatePlaceholderLabelColor()
@@ -202,7 +202,7 @@ open class TextField: UITextField, Themeable {
   }
   
   /// Placeholder active text
-  @IBInspectable
+  
   open var placeholderActiveColor = Color.blue.base {
     didSet {
       /// Keep tintColor update here. See #1229
@@ -212,15 +212,15 @@ open class TextField: UITextField, Themeable {
   }
   
   /// This property adds a padding to placeholder y position animation
-  @IBInspectable
+  
   open var placeholderVerticalOffset: CGFloat = 0
   
   /// This property adds a padding to placeholder y position animation
-  @IBInspectable
+  
   open var placeholderHorizontalOffset: CGFloat = 0
   
   /// The scale of the active placeholder in relation to the inactive
-  @IBInspectable
+  
   open var placeholderActiveScale: CGFloat = 0.75 {
     didSet {
       layoutPlaceholderLabel()
@@ -228,11 +228,11 @@ open class TextField: UITextField, Themeable {
   }
   
   /// The detailLabel UILabel that is displayed.
-  @IBInspectable
+  
   public let detailLabel = UILabel()
   
   /// The detailLabel text value.
-  @IBInspectable
+  
   open var detail: String? {
     get {
       return detailLabel.text
@@ -244,7 +244,7 @@ open class TextField: UITextField, Themeable {
   }
   
   /// Detail text
-  @IBInspectable
+  
   open var detailColor = Color.darkText.others {
     didSet {
       updateDetailLabelColor()
@@ -252,7 +252,7 @@ open class TextField: UITextField, Themeable {
   }
   
   /// Vertical distance for the detailLabel from the divider.
-  @IBInspectable
+  
   open var detailVerticalOffset: CGFloat = 8 {
     didSet {
       layoutSubviews()
@@ -271,7 +271,7 @@ open class TextField: UITextField, Themeable {
   open fileprivate(set) var clearIconButton: IconButton?
   
   /// Enables the clearIconButton.
-  @IBInspectable
+  
   open var isClearIconButtonEnabled: Bool {
     get {
       return nil != clearIconButton
@@ -300,7 +300,7 @@ open class TextField: UITextField, Themeable {
   }
   
   /// Enables the automatic handling of the clearIconButton.
-  @IBInspectable
+  
   open var isClearIconButtonAutoHandled = true {
     didSet {
       clearIconButton?.removeTarget(self, action: #selector(handleClearIconButton), for: .touchUpInside)
@@ -331,7 +331,7 @@ open class TextField: UITextField, Themeable {
   }
   
   /// Enables the visibilityIconButton.
-  @IBInspectable
+  
   open var isVisibilityIconButtonEnabled: Bool {
     get {
       return nil != visibilityIconButton
@@ -362,7 +362,7 @@ open class TextField: UITextField, Themeable {
   }
   
   /// Enables the automatic handling of the visibilityIconButton.
-  @IBInspectable
+  
   open var isVisibilityIconButtonAutoHandled = true {
     didSet {
       visibilityIconButton?.removeTarget(self, action: #selector(handleVisibilityIconButton), for: .touchUpInside)
@@ -374,7 +374,7 @@ open class TextField: UITextField, Themeable {
     }
   }
   
-  @IBInspectable
+  
   open var isPlaceholderUppercasedWhenEditing = false {
     didSet {
       updatePlaceholderTextToActiveState()

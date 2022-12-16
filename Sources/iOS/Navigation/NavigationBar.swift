@@ -46,7 +46,7 @@ open class NavigationBar: UINavigationBar, Themeable {
   }
   
   /// A reference to EdgeInsets.
-  @IBInspectable
+  
   open var contentEdgeInsets = EdgeInsetsPresetToValue(preset: .square1) {
     didSet {
       layoutSubviews()
@@ -61,7 +61,7 @@ open class NavigationBar: UINavigationBar, Themeable {
   }
   
   /// A wrapper around grid.interimSpace.
-  @IBInspectable
+  
   open var interimSpace = InterimSpacePresetToValue(preset: .interimSpace3) {
     didSet {
       layoutSubviews()
@@ -72,7 +72,7 @@ open class NavigationBar: UINavigationBar, Themeable {
    The back button image writes to the backIndicatorImage property and
    backIndicatorTransitionMaskImage property.
    */
-  @IBInspectable
+  
   open var backButtonImage: UIImage? {
     get {
       return backIndicatorImage
@@ -85,7 +85,7 @@ open class NavigationBar: UINavigationBar, Themeable {
   }
   
   /// A property that accesses the backing layer's background
-  @IBInspectable
+  
   open override var backgroundColor: UIColor? {
     get {
       return barTintColor

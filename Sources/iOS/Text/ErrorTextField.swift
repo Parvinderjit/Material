@@ -28,11 +28,11 @@ import UIKit
 open class ErrorTextField: TextField {
   
   /// The errorLabel UILabel that is displayed.
-  @IBInspectable
+  
   public let errorLabel = UILabel()
   
   /// The errorLabel text value.
-  @IBInspectable
+  
   open var error: String? {
     get {
       return errorLabel.text
@@ -44,7 +44,7 @@ open class ErrorTextField: TextField {
   }
   
   /// Error text color
-  @IBInspectable
+  
   open var errorColor = Color.red.base {
     didSet {
       errorLabel.textColor = errorColor
@@ -52,7 +52,7 @@ open class ErrorTextField: TextField {
   }
   
   /// Vertical distance for the errorLabel from the divider.
-  @IBInspectable
+  
   open var errorVerticalOffset: CGFloat = 8 {
     didSet {
       layoutSubviews()

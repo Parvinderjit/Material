@@ -31,7 +31,7 @@ open class TransitionController: ViewController {
    A Boolean property used to enable and disable interactivity
    with the rootViewController.
    */
-  @IBInspectable
+  
   open var isUserInteractionEnabled: Bool {
     get {
       return rootViewController.view.isUserInteractionEnabled
@@ -63,7 +63,7 @@ open class TransitionController: ViewController {
   }
   
   /// A reference to the container view.
-  @IBInspectable
+  
   public let container = UIView()
   
   /**

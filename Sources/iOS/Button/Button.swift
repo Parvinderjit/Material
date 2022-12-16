@@ -54,7 +54,7 @@ open class Button: UIButton, Pulseable, PulseableLayer, Themeable {
   }
   
   /// PulseAnimation color.
-  @IBInspectable
+  
   open var pulseColor: UIColor {
     get {
       return pulse.color
@@ -65,7 +65,7 @@ open class Button: UIButton, Pulseable, PulseableLayer, Themeable {
   }
   
   /// Pulse opacity.
-  @IBInspectable
+  
   open var pulseOpacity: CGFloat {
     get {
       return pulse.opacity
@@ -76,7 +76,7 @@ open class Button: UIButton, Pulseable, PulseableLayer, Themeable {
   }
   
   /// A property that accesses the backing layer's background
-  @IBInspectable
+  
   open override var backgroundColor: UIColor? {
     didSet {
       layer.backgroundColor = backgroundColor?.cgColor
@@ -91,7 +91,7 @@ open class Button: UIButton, Pulseable, PulseableLayer, Themeable {
   }
   
   /// Sets the normal and highlighted image for the button.
-  @IBInspectable
+  
   open var image: UIImage? {
     didSet {
       setImage(image, for: .normal)
@@ -108,7 +108,7 @@ open class Button: UIButton, Pulseable, PulseableLayer, Themeable {
   }
   
   /// Sets the normal and highlighted title for the button.
-  @IBInspectable
+  
   open var title: String? {
     didSet {
       setTitle(title, for: .normal)
@@ -135,7 +135,7 @@ open class Button: UIButton, Pulseable, PulseableLayer, Themeable {
   }
   
   /// Sets the normal and highlighted titleColor for the button.
-  @IBInspectable
+  
   open var titleColor: UIColor? {
     didSet {
       setTitleColor(titleColor, for: .normal)
@@ -155,7 +155,7 @@ open class Button: UIButton, Pulseable, PulseableLayer, Themeable {
   }
   
   /// Sets the selected titleColor for the button.
-  @IBInspectable
+  
   open var selectedTitleColor: UIColor? {
     didSet {
       setTitleColor(selectedTitleColor, for: .selected)

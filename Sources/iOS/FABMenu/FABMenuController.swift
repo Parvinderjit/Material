@@ -44,7 +44,7 @@ extension UIViewController {
 
 open class FABMenuController: TransitionController {
   /// Reference to the MenuView.
-  @IBInspectable
+  
   open var fabMenu = FABMenu()
   
   /// A FABMenuBacking value type.

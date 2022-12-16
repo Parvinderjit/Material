@@ -84,7 +84,7 @@ open class Switch: UIControl, Themeable {
   open weak var delegate: SwitchDelegate?
   
   /// Indicates if the animation should bounce.
-  @IBInspectable
+  
   open var isBounceable = true {
     didSet {
       bounceOffset = isBounceable ? 3 : 0
@@ -92,7 +92,7 @@ open class Switch: UIControl, Themeable {
   }
   
   /// Button on color.
-  @IBInspectable
+  
   open var buttonOnColor = Color.clear {
     didSet {
       styleForState(state: switchState)
@@ -100,7 +100,7 @@ open class Switch: UIControl, Themeable {
   }
   
   /// Button off color.
-  @IBInspectable
+  
   open var buttonOffColor = Color.clear {
     didSet {
       styleForState(state: switchState)
@@ -108,7 +108,7 @@ open class Switch: UIControl, Themeable {
   }
   
   /// Button on image.
-  @IBInspectable
+  
   open var buttonOnImage: UIImage? {
     didSet {
       styleForState(state: switchState)
@@ -116,7 +116,7 @@ open class Switch: UIControl, Themeable {
   }
   
   /// Button off image.
-  @IBInspectable
+  
   open var buttonOffImage: UIImage? {
     didSet {
       styleForState(state: switchState)
@@ -124,7 +124,7 @@ open class Switch: UIControl, Themeable {
   }
   
   /// Track on color.
-  @IBInspectable
+  
   open var trackOnColor = Color.clear {
     didSet {
       styleForState(state: switchState)
@@ -132,7 +132,7 @@ open class Switch: UIControl, Themeable {
   }
   
   /// Track off color.
-  @IBInspectable
+  
   open var trackOffColor = Color.clear {
     didSet {
       styleForState(state: switchState)
@@ -140,7 +140,7 @@ open class Switch: UIControl, Themeable {
   }
   
   /// Button on disabled color.
-  @IBInspectable
+  
   open var buttonOnDisabledColor = Color.clear {
     didSet {
       styleForState(state: switchState)
@@ -148,7 +148,7 @@ open class Switch: UIControl, Themeable {
   }
   
   /// Track on disabled color.
-  @IBInspectable
+  
   open var trackOnDisabledColor = Color.clear {
     didSet {
       styleForState(state: switchState)
@@ -156,7 +156,7 @@ open class Switch: UIControl, Themeable {
   }
   
   /// Button off disabled color.
-  @IBInspectable
+  
   open var buttonOffDisabledColor = Color.clear {
     didSet {
       styleForState(state: switchState)
@@ -164,7 +164,7 @@ open class Switch: UIControl, Themeable {
   }
   
   /// Track off disabled color.
-  @IBInspectable
+  
   open var trackOffDisabledColor = Color.clear {
     didSet {
       styleForState(state: switchState)
@@ -172,7 +172,7 @@ open class Switch: UIControl, Themeable {
   }
   
   /// Button on disabled image.
-  @IBInspectable
+  
   open var buttonOnDisabledImage: UIImage? {
     didSet {
       styleForState(state: switchState)
@@ -180,7 +180,7 @@ open class Switch: UIControl, Themeable {
   }
   
   /// Button off disabled image.
-  @IBInspectable
+  
   open var buttonOffDisabledImage: UIImage? {
     didSet {
       styleForState(state: switchState)
@@ -202,7 +202,7 @@ open class Switch: UIControl, Themeable {
     }
   }
   
-  @IBInspectable
+  
   open override var isEnabled: Bool {
     didSet {
       styleForState(state: internalSwitchState)
@@ -210,7 +210,7 @@ open class Switch: UIControl, Themeable {
   }
   
   /// A boolean indicating if the switch is on or not.
-  @IBInspectable
+  
   public var isOn: Bool {
     get {
       return .on == internalSwitchState

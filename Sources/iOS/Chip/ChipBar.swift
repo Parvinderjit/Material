@@ -168,7 +168,7 @@ open class ChipBar: Bar {
   }
   
   /// A reference to EdgeInsets.
-  @IBInspectable
+  
   open var chipItemsContentEdgeInsets: EdgeInsets {
     get {
       return contentView.grid.contentEdgeInsets
@@ -189,7 +189,7 @@ open class ChipBar: Bar {
   }
   
   /// A wrapper around chipItems interimSpace.
-  @IBInspectable
+  
   open var chipItemsInterimSpace: InterimSpace {
     get {
       return contentView.grid.interimSpace

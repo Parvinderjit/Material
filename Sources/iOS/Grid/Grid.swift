@@ -310,7 +310,7 @@ extension UIView {
   }
   
   /// A reference to grid's layoutEdgeInsets.
-  @IBInspectable
+  
   open var layoutEdgeInsets: EdgeInsets {
     get {
       return grid.layoutEdgeInsets

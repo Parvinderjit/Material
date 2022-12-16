@@ -101,7 +101,7 @@ extension UIView {
   }
   
   /// Enables automatic shadowPath sizing.
-  @IBInspectable
+  
   @objc
   open var isShadowPathAutoSizing: Bool {
     get {
